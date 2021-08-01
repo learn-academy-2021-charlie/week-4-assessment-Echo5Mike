@@ -60,7 +60,6 @@ end
 #         @model = model
 #         @wheels = wheels
 #         @current_speed = current_speed
-#         # @pedal_faster = false
 #     end
 #     def get_info
 #         "The #{@model} bike has #{@wheels} wheels, and a speed of #{@current_speed} MPH"        
@@ -85,7 +84,7 @@ end
 
 # -------------------3b) Add the ability to pedal faster and brake. The pedal_faster method should increase the speed. The brake method should decrease the speed. The bike cannot go negative speeds.
 
-
+#this one is becoming difficult, 
 class Bike 
     attr_accessor :model, :wheels, :current_speed
     def set_info model, wheels, current_speed
@@ -96,12 +95,22 @@ class Bike
     def get_info
         "The #{@model} bike has #{@wheels} wheels, and a speed of #{@current_speed} MPH"        
     end
+    # def faster 
+    #     @speed = @current_speed + 15
+    # end    
+    def faster 
+        if @current_speed >= 0
+            @current_speed += 15
+        end    
+    end    
 end
 bike1 = Bike.new
 bike1.set_info 'Trek', 2, 0
+# p bike1
+p bike1.faster
 p bike1
-
-
+p bike1.faster
+p bike1
 
 # Expected output example: my_bike.pedal_faster 10 => 10
 # Expected output example: my_bike.brake 15 => 0
