@@ -128,6 +128,4 @@ var testArray2 = [7, 8, 2, 3, 1, 5, 4]
 console.log(twins(testArray1,testArray2))
 // Expected output: [3, 7, 10, 5, 4, 8, 2, 1]
 
-
-
 // b) Create the function that makes the test pass.

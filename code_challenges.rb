@@ -48,18 +48,60 @@ def aeiou (string)
     string.delete "aeiou" "AIEOU"# 'a' 'e' 'i' 'o' 'u' # I ended having to look up the website and I had to play around if I needed comma's, but then I looked up more examples on the site and found that you can just pass in a .delete string of vowels
 end
 # I removed .downcase and just added the vowles in upper case to make sure that I got the expected output.
-p aeiou (album1)
-p aeiou (album2)
-p aeiou (album3)
+# p aeiou (album1)
+# p aeiou (album2)
+# p aeiou (album3)
 
-
+#/////////////////////////////////////////////////////////////////////////////////
 # --------------------3a) Create a class called Bike that is initialized with a model, wheels, and current_speed. The default number of wheels is 2. The current_speed should start at 0. Create a get_info method that returns a sentence with all the data from the bike object.
+# I had to wacth the lecture since I missed that portion of the class.  
+# class Bike 
+#     def set_info model, wheels, current_speed
+#         @model = model
+#         @wheels = wheels
+#         @current_speed = current_speed
+#         # @pedal_faster = false
+#     end
+#     def get_info
+#         "The #{@model} bike has #{@wheels} wheels, and a speed of #{@current_speed} MPH"        
+#     end
+# end
 
+# bike1 = Bike.new 
+# bike1.set_info 'Trek', 2, 0
+# # p pedal_faster
+# p bike1.get_info
+#p bike1 # I don't know why I p gets me <Bike:0x00007faf210f3368 @model="HURTLEY", @wheels=2, @current_speed=0>
+#puts bike1## and puts gets me <Bike:0x00007f930e89b478>
+
+
+#, wheels, current_speed
+    # def bike_info
+    #     "Your bike is #{@model} it has #{@wheels} wheels, and a speed of #{@current_speed}."
+    # end
 # Expected output example: 'The Trek bike has 2 wheels and is going 0 mph.'
 
 
 
 # -------------------3b) Add the ability to pedal faster and brake. The pedal_faster method should increase the speed. The brake method should decrease the speed. The bike cannot go negative speeds.
+
+
+class Bike 
+    attr_accessor :model, :wheels, :current_speed
+    def set_info model, wheels, current_speed
+        @model = model
+        @wheels = wheels
+        @current_speed = current_speed
+    end
+    def get_info
+        "The #{@model} bike has #{@wheels} wheels, and a speed of #{@current_speed} MPH"        
+    end
+end
+bike1 = Bike.new
+bike1.set_info 'Trek', 2, 0
+p bike1
+
+
 
 # Expected output example: my_bike.pedal_faster 10 => 10
 # Expected output example: my_bike.brake 15 => 0
