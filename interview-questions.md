@@ -7,23 +7,23 @@ Then, research the question to expand on your answer. Even if you feel you have 
 
 1. What is an instance variable in Ruby? How is it different from other variables?
 
-  Your answer:
+  Your answer:An instance variable is when call upon a class in ruby and pass in cetain arguments that return you an object that meet the class and arguments that you called upon.  Where a variable is passed to a function to get an outcome.
 
-  Researched answer:
+  Researched answer:While in ruby an instance variable dones not have to be declared in order to be used.  However, in "regular" variable does have to be declared in order to be acted on.
 
 
 
 2. What is a block in Ruby?
 
-  Your answer:
+  Your answer: A block is a exuitable block of code that is encapsilated.
 
-  Researched answer:
+  Researched answer: A block is a function that can be passed in as a argument.  When every a block is defined it musht be wraped in curly brakets for longet codes or they need ||.  
 
 
 
 3. Ruby has an implicit return. What does that mean?
 
-  Your answer:
+  Your answer: In ruby an emplicit return means that the last line of code in your method is that will be returned if the method is called upon.
 
   Researched answer:
 
